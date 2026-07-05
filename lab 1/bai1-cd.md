@@ -6,3 +6,4 @@
 
 ## 2. Hình ảnh giao diện VS code đồng bộ Github
 ![alert text](Bai_1_caidat.jpg)
+            
