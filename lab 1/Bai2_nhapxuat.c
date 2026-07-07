@@ -13,17 +13,10 @@ int main (){
     printf("NHAP MA SO SINH VIEN: ");
     scanf("%s", mssv);
 
-    while (getchar() != '\n');
+    getchar();
 
     printf("NHAP HO VA TEN: ");
     fgets(hoten, sizeof(hoten), stdin);
-
-    for (int i=0 ; hoten[i] != '\0' ; i++) {
-        if (hoten[i] == '\n') {
-            hoten[i] = '\0';
-            break;
-        }
-    }
     
     printf("NHAP NAM SINH: ");
     scanf("%d", &namsinh);
@@ -39,7 +32,8 @@ int main (){
     printf("Nam sinh: %d\n", namsinh);
     printf("Tuoi: %d\n", tuoi);
     printf("Diem trung binh: %.2f\n", diemTB);
-    
+
     system("pause");
+
     return 0;
 }
