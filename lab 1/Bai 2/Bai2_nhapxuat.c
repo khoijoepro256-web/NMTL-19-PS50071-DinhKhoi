@@ -1,4 +1,6 @@
 #include    <stdio.h>
+#include <stdlib.h>
+
 
 
 int main (){
@@ -34,6 +36,5 @@ int main (){
     printf("Diem trung binh: %.2f\n", diemTB);
 
     system("pause");
-
     return 0;
 }

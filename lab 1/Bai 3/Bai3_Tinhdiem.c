@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main () {
     char mssv[20];
@@ -28,6 +29,5 @@ int main () {
     printf("Diem trung binh: %.2f\n", dTB);
 
     system("pause");
-    
     return 0;
 }
