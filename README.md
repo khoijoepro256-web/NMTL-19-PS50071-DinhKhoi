@@ -1,0 +1,1 @@
+echo "# NMTL-19-PS50071-DinhKhoi" >> README.md git init git add README.md git commit -m "first commit" git branch -M main git remote add origin(https://github.com/khoijoepro256-web/NMTL-19-PS50071-DinhKhoi.git) git push -u origin main
