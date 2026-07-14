@@ -16,11 +16,11 @@ int main   (){
     printf("Nhap he so b: "); 
     scanf("%f", &b);
 
-    x = -b / a;
+    x = -1.0*b/a;
 
 
     printf("===KET QUA===\n");
-    printf("Nghiem cua phuong trinh ax + b = 0 la: x = %.2f\n", a, b, x);
+    printf("Nghiem cua phuong trinh ax + b = 0 la: x = %.2f\n", x);
     system("pause");
 
     return 0;
