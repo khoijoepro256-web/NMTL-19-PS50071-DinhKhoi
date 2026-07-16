@@ -20,7 +20,7 @@ int main   (){
 
 
     printf("===KET QUA===\n");
-    printf("Nghiem cua phuong trinh ax + b = 0 la: x = %.2f\n", x);
+    printf("Nghiem cua phuong trinh ax + b = 0 la: x = %.2f\n",a,b,x);
     system("pause");
 
     return 0;
