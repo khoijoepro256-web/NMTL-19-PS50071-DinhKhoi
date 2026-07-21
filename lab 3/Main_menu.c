@@ -46,7 +46,6 @@ int main (){
             else if(diem<0&&diem>10){
                 printf("Diem so nhap vao khong hop le!\n");
             }
-                  
             break;
             case 2:
                 printf("Ban chon chuc nang giai phuong trinh bac hai\n");
@@ -86,11 +85,34 @@ int main (){
                         printf("x2=%.2f\n",x2);
                     }
                 }
-                   
-                
             break;
             case 3:
                 printf("Ban chon chuc nang tinh tien dien tieu thu hang thang\n");
+                float kwh,tongtien;
+                do
+                {
+                printf("Nhap vao so dien tieu thu (kWh):\n",kwh);
+                scanf("%f",&kwh);
+                if(kwh<=50){
+                    tongtien=kwh*1678;
+                }
+                else if(kwh<=100){
+                    tongtien=50*1678+(kwh-50)*1734;
+                }
+                else if(kwh<=200){
+                    tongtien=50*1678+(kwh-50)*1734+(kwh-100)*2014;
+                }
+                else if(kwh<=300){
+                    tongtien=50*1678+(kwh-50)*1734+(kwh-100)*2014+(kwh-200)*2536;
+                }
+                else if(kwh<=400){
+                    tongtien=50*1678+(kwh-50)*1734+(kwh-100)*2014+(kwh-200)*2536+(kwh-300)*2834;
+                }
+                else if(kwh>400){
+                    tongtien=50*1678+(kwh-50)*1734+(kwh-100)*2014+(kwh-200)*2536+(kwh-300)*2834+(kwh-400)*2927;
+                }
+                printf("Tong tien dien tieu thu hang thang la:%.0f\n",tongtien);
+                }while(kwh==0&&kwh<0);
             break;
             case 4:
                 printf("Thoat chuong trinh\n");
