@@ -10,7 +10,7 @@ int main() {
     scanf("%f", &b);
     printf("Nhap he so c: ");
     scanf("%f", &c);
-    delta = b * b - 4 * a * c;
+    delta = b*b-4*a*c;
     if (delta == 0) {
         x1=x2=(-b/(2*a));
         printf("Phuong trinh co nghiem kep x1=x2=%.2f", x1);
