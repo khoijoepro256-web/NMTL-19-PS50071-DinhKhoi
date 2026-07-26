@@ -11,7 +11,7 @@ int main() {
     printf("Nhap diem Hoa: ");  
     scanf("%f", &diemHoa);
 
-    diemTB = (float)(diemToan * 3 + diemLy * 2 + diemHoa) / 6.0;
+    diemTB=(float)(diemToan*3+diemLy*2+diemHoa)/6.0;
 
     printf("===KET QUA===\n");
     printf("Diem trung binh: %.2f\n", diemTB);
