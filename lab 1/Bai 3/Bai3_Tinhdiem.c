@@ -7,7 +7,7 @@ int main () {
     float toan, ly, hoa, dTB;
 
     printf("Nhap ma so sinh vien: ");
-    scanf("%19s", mssv);
+    scanf("%19s", &mssv);
 
     getchar();
 
@@ -21,7 +21,7 @@ int main () {
     printf("Nhap diem Hoa:");
     scanf("%f", &hoa);
 
-    dTB = (toan*2+ly+hoa)/ (float)4;
+    dTB = (toan*2+ly+hoa)/(float)4;
 
     printf("***KET QUA***\n");
     printf("Ma so sinh vien: %s\n", mssv);
