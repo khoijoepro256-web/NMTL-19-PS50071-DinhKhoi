@@ -14,14 +14,14 @@ int main (){
         printf("| 3.Chuc nang tinh tien dien tieu thu hang thang |\n");
         printf("| 4.Thoat chuong trinh                           |\n");
         printf("+------------------------------------------------+\n");
-        printf(">>Chon chuc nang cua ban (1-4):");
+        printf(">>Chon chuc nang cua ban (1-4):\n\n");
         scanf("%d",&chon);
 
     
         switch(chon)
         {
-            case 1:
-                printf("Ban chon chuc nang tinh hoc luc sinh vien\n");
+            case 1: // Mục chức năng 1
+                printf("\nBan chon chuc nang tinh hoc luc sinh vien\n");
                 printf("Nhap vao diem so cua sinh vien:\n");
                 scanf("%f",&diem);
 
@@ -47,8 +47,8 @@ int main (){
                 printf("Diem so nhap vao khong hop le!\n");
             }
             break;
-            case 2:
-                printf("Ban chon chuc nang giai phuong trinh bac hai\n");
+            case 2: //Mục chức năng 2 
+                printf("\nBan chon chuc nang giai phuong trinh bac hai\n");
                 printf("Giai phuong trinh ax^2+bx+c=0\n");
                 printf("Nhap vao he so a\n");
                 scanf("%f", &a);
@@ -87,7 +87,7 @@ int main (){
                 }
             break;
             case 3:
-                printf("Ban chon chuc nang tinh tien dien tieu thu hang thang\n");
+                printf("\nBan chon chuc nang tinh tien dien tieu thu hang thang\n");
                 float kwh,tongtien;
                 do
                 {
@@ -115,7 +115,7 @@ int main (){
                 }while(kwh==0&&kwh<0);
             break;
             case 4:
-                printf("Thoat chuong trinh\n");
+                printf("\nThoat chuong trinh\n");
             break;
             default:
                 printf("Ban phai chon chuc nang 1-4\n");
