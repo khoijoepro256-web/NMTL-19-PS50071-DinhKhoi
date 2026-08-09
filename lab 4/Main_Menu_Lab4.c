@@ -30,7 +30,7 @@ int main()
                     for(int i = 2; i <= num / 2; i++){
                         if(num % i == 0){
                             printf("Số %d khong phai la so nguyen to\n", num);
-                            goto ketThuc;
+                            goto ketThuc;  
                             break;
                         }
                     }

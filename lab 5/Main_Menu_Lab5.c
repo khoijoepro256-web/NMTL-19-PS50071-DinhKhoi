@@ -8,6 +8,8 @@ void chucnang4();
 bool kiemtranamnhuan(int nam);
 int solonnhat(int a, int b, int c);
 void swap(int *a, int *b);
+const char* checkTriangle(float a, float b, float c);
+
     
  int main(){
 
@@ -27,6 +29,9 @@ void swap(int *a, int *b);
             break;
         case 3:
             chucnang3();
+            break;
+        case 4:
+            chucnang4();
             break;
         case 5:
             printf("Ban da chon thoat chuong trinh!\n");
@@ -110,10 +115,10 @@ void swap(int *a, int *b);
     }
     void chucnang4()
     {
-        int a,b,c;
+        float a, b, c;
         printf("Nhap 3 canh a,b,c: ");
-        scanf("%d%d%d",&a,&b,&c);
-        printf("%s\n",checkTriangle(a,b,c));
+        scanf("%f%f%f", &a, &b, &c);
+        printf("%s\n",checkTriangle(a, b, c));
 }
 
 

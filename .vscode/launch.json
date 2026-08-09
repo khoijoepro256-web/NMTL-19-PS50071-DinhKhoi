@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Admin/fPT SCHOOL/Lap_trinh/NMLT-19-PS50071-DinhKhoi/lab 6",
+      "program": "c:/Users/Admin/fPT SCHOOL/Lap_trinh/NMLT-19-PS50071-DinhKhoi/lab 6/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\Users\\Admin\\fPT SCHOOL\\Lap_trinh\\gdb-16.1.0-gdb-17.2.90.20260510-binutils-2.46.0-mingw-w64-v14.0.0-ucrt\\bin",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

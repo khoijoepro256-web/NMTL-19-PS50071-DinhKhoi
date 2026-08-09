@@ -13,6 +13,8 @@ void matranbinhphuong(int row, int col);
 void timMaxMin(int a[], int n);
 void sapxepgiamdan(int a[], int n);
 void swap(int *a, int *b);
+void xuatSoLeMaTran(int row, int col);
+
     
  int main(){
 
@@ -170,6 +172,12 @@ void swap(int *a, int *b);
         }
         printf("\n");
     }
+    void swap(int *a, int *b)
+    {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    }
     //Ma trận bình phương     
     void chucnang4()
     {
@@ -190,6 +198,7 @@ void swap(int *a, int *b);
                 printf("a[%d][%d] = ", i, j);
                 scanf("%d", &a[i][j]);
             }
+
         }
         // Xuất ma trận bình phương
         printf("Ma tran binh phuong la:\n");
@@ -197,14 +206,49 @@ void swap(int *a, int *b);
         {
             for (int j = 0; j < col; j++)
             {
-                printf("%3d\t ", a[i][j] * a[i][j]);
+                if(a[i][j]%2==0)
+                {
+                    printf("%3d\t", a[i][j] * a[i][j]);
+
+                }else
+                {
+                    printf("%3d\t", a[i][j]);
+                }
+                
             }
-            printf("\n");
+                printf("\n");
         }
+    
     }
    
     void chucnang5()
     {
-        
+        xuatSoLeMaTran(2, 2);
+    }
+    void xuatSoLeMaTran(int row, int col)
+    {
+        int a[row][col];
+    // nhap
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < col; j++)
+            {
+                printf("A[%d,%d] = ", i, j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    // xuat 
+    printf("Vi tri cac so le trong ma tran:\n");
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            if (a[i][j] % 2 != 0)
+            {
+                printf("A[%d,%d] = %d\n", i, j, a[i][j]);
+            }
+        }
+    }
     }
    
