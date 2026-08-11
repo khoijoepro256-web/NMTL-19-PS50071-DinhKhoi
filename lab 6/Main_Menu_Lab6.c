@@ -129,12 +129,12 @@ void xuatSoLeMaTran(int row, int col);
     min=a[0]; //4
     max=a[0]; //4
     for(int i=1;i<n;i++){
-        if(min>a[i]){   //1   4 > 6  
-                        //2   4 > 3   min = 3
+        if(min>a[i]){    
+                        
             min=a[i];
         }
-        if(max<a[i]){   //1   4 < 6  max = 6
-                        //2   6 < 3
+        if(max<a[i]){  
+                        
             max=a[i]; 
         }
     }
