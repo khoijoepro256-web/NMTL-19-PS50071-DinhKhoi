@@ -1,5 +1,6 @@
 #include <stdio.h>
 void yeuCau1();
+void yeucau2();
 int main()
 {
     int chon;
@@ -20,23 +21,7 @@ int main()
                 yeuCau1();
                 break;
             case 2:
-                printf("Ban chon chuc nang 2: Kiem tra so nguyen to\n");
-                printf("Nhap mot so nguyen: ");
-                int num;
-                scanf("%d", &num);
-                if(num <= 1){            
-                    printf("Số %d khong phai la so nguyen to\n", num);
-                } else {
-                    for(int i = 2; i <= num / 2; i++){
-                        if(num % i == 0){
-                            printf("Số %d khong phai la so nguyen to\n", num);
-                            goto ketThuc;  
-                            break;
-                        }
-                    }
-                     printf("Số %d la so nguyen to\n", num);
-                }
-                ketThuc:
+                yeucau2();
                 break;
             case 3:
                 printf("Ban chon chuc nang 3: Kiem tra so chinh phuong\n");
@@ -98,3 +83,24 @@ void yeuCau1()
                     printf("Khong co so chia het cho 2 trong khoang tu %d den %d\n", min, max);
                 }
 }
+//chức năng 2
+void chucnang2()
+{
+ printf("Ban chon chuc nang 2: Kiem tra so nguyen to\n");
+                printf("Nhap mot so nguyen: ");
+                int num;
+                scanf("%d", &num);
+                if(num <= 1){            
+                    printf("Số %d khong phai la so nguyen to\n", num);
+                } else {
+                    for(int i = 2; i <= num / 2; i++){
+                        if(num % i == 0){
+                            printf("Số %d khong phai la so nguyen to\n", num);
+                            goto ketThuc;  
+                            break;
+                        }
+                    }
+                     printf("Số %d la so nguyen to\n", num);
+                }
+                ketThuc:
+            }
