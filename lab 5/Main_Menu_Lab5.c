@@ -87,7 +87,7 @@ const char* checkTriangle(float a, float b, float c);
             printf("Nam %d khong phai la nam nhuan\n", nam);
         }
     }
-    //Năm nhuận là năm chia hết cho 400, hoặc chia hết cho 4 nhưng không chia hết cho 100
+    //Nam nhuan: chia het cho 4 va khong chia het cho 100 hoac chia het cho 400
     bool kiemtranamnhuan(int nam){
 
         if((nam % 400 == 0) || (nam % 4 == 0 && nam % 100 != 0)){
