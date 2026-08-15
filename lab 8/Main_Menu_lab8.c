@@ -27,15 +27,15 @@ int main()
     do
     {
         printf("+---------------------------------------------------+\n");
-        printf("| HỆ THỐNG QUẢN LÝ SINH VIÊN (LAB 8)                |\n");
+        printf("| He thong quan ly sinh vien (LAB 8)                |\n");
         printf("+---------------------------------------------------+\n");
-        printf("| 1. Nhập và Xuất danh sách sinh viên               |\n");
-        printf("| 2. Sắp xếp sinh viên theo điểm TB tăng dần        |\n");
-        printf("| 3. Tìm kiếm sinh viên theo Mã số sinh viên (MSSV) |\n");
-        printf("| 4. Xuất danh sách sinh viên đạt Học bổng (>= 8.0) |\n");
-        printf("| 5. Thoát chương trình                             |\n");
+        printf("| 1. Nhap va Xuat danh sach sinh vien               |\n");
+        printf("| 2. Sap xep sinh vien theo diem TB tang dan         |\n");
+        printf("| 3. TTim kiem sinh vien theo Ma so sinh vien (MSSV) |\n");
+        printf("| 4. Xuat danh sach sinh vien dat Hoc bong (>= 8.0) |\n");
+        printf("| 5. Thoat chuong trinh                             |\n");
         printf("+---------------------------------------------------+\n");
-        printf(">> Xin mời chọn chức năng (1-5): ");
+        printf(">> Xin moi chon chuc nang (1-5): ");
         scanf("%d", &chon);
 
         switch (chon)
