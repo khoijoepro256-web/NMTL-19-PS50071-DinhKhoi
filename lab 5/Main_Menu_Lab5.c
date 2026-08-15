@@ -54,7 +54,7 @@ const char* checkTriangle(float a, float b, float c);
         printf("| 5. Thoat chuong trinh                             |\n");
         printf("+---------------------------------------------------+\n");
     }
-    //Tìm giá trị lớn nhất trong 3 số
+    //Tim gia tri lon nhat trong 3 so
     void chucnang1()
     {
         printf("Chuc nang 1: Tim gia tri lon nhat trong 3 so\n");
@@ -73,7 +73,7 @@ const char* checkTriangle(float a, float b, float c);
         }
         return lonnhat;
     }
-    //Kiểm tra Năm nhuận
+    //kiem tra nam nhuan
     void chucnang2()
     {
         printf("Chuc nang 2: Kiem tra nam nhuan\n");
